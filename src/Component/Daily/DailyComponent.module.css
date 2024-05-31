@@ -1,0 +1,179 @@
+.details {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  background-color: #d1d1d1;
+  border-radius: 0.5rem;
+
+  margin: 0 1rem;
+}
+
+.summary:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+
+.summaryContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.25rem;
+  }
+}
+
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 4px;
+}
+
+@media (min-width: 768px) {
+  .detailContainer {
+    font-size: 1.25rem;
+  }
+}
+
+.weatherIcon {
+  width: 30px;
+}
+
+@media (min-width: 768px) {
+  .weatherIcon {
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .weatherIcon {
+    width: 40px;
+  }
+}
+
+.detailsContent {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #d1d1d1;
+  margin: 0 0.7rem;
+}
+
+.temperatureDetail,
+.otherDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tempContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.temUnit {
+  color: #374151;
+}
+
+.weatherDetails {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .weatherDetails {
+    font-size: 1.25rem;
+  }
+}
+
+.tempDetail {
+  flex-direction: column;
+}
+
+.temperatureTitle {
+  font-weight: 600;
+  color: #374151;
+}
+
+@media (min-width: 768px) {
+  .temperatureTitle {
+    font-size: 1.25rem;
+  }
+}
+
+.temperatureInfo {
+  display: flex;
+  align-items: center;
+  margin-left: 0.25rem;
+}
+
+.temperature {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+@media (min-width: 768px) {
+  .temperature {
+    font-size: 2.25rem;
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .detail {
+    font-size: 1.25rem;
+  }
+}
+
+.feelsLikeText {
+  color: #374151;
+}
+
+.feelsLike {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .feelsLike {
+    font-size: 1.25rem;
+  }
+}
+
+.feelsLikeValue {
+  font-weight: 600;
+  color: #1f2937;
+}

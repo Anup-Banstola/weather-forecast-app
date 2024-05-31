@@ -1,0 +1,73 @@
+.container {
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  font-size: 3xl;
+  color: white;
+}
+
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  .weatherContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .weatherContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 2rem;
+  }
+}
+
+/* @media screen and (min-width: 1024px) {
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+}
+<style > @media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+}
+<style > @media (min-width: 640px) {
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+<style > .gap-8 {
+  gap: 2rem;
+}
+<style > .items-center {
+  align-items: center;
+}
+<style > .flex-col {
+  flex-direction: column;
+}
+<style > .flex {
+  display: flex;
+}
+
+<style > .mt-2 {
+  margin-top: 0.5rem;
+} */

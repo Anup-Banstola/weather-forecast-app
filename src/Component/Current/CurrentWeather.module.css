@@ -1,0 +1,162 @@
+.currentWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5rem;
+
+  width: 100%;
+}
+
+.weatherCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(28, 10, 63);
+  width: 90%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.weatherTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.weatherDetails {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.weatherLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locationName {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.locationTime {
+  color: #94a3b8;
+}
+
+.weatherTemperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.weatherDetail {
+  color: #94a3b8;
+}
+
+.weatherIcon {
+  width: 4rem;
+}
+
+.airCondition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+.airConditionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0px;
+  color: white;
+}
+
+.airConditionDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .airConditionDetails {
+    gap: 5rem;
+  }
+}
+
+.airConditionGroup {
+  display: flex;
+  gap: 4rem;
+}
+
+.airConditionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: #94a3b8;
+}
+
+.iconLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.iconValue {
+  color: #e2e8f0;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.forecastTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.forecastItems {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}

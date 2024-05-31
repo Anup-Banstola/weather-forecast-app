@@ -1,0 +1,22 @@
+.hourlyForecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.1);
+}
+
+.time {
+  color: #94a3b8;
+}
+
+.temperature {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
