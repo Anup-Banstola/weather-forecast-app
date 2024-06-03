@@ -28,7 +28,10 @@ const TopButtons = ({ setQuery }) => {
       id: 5,
       city: "Butwal",
     },
+    { id: 6, city: "Sydney" },
   ];
+
+  console.log(cities);
 
   return (
     <div className={styles.topButtonsContainer}>

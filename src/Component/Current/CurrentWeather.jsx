@@ -1,13 +1,36 @@
 import { FaCloud, FaTemperatureLow, FaWater, FaWind } from "react-icons/fa";
 import HourlyForecast from "./HourlyForecast";
 import { formatToLocalTime, iconUrlFromCode } from "../Services/WeatherService";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { WeatherContext } from "../../Context/WeatherContext";
 import styles from "./CurrentWeather.module.css";
 
 const CurrentWeather = ({ hourly }) => {
   const allData = useContext(WeatherContext);
   const weathers = allData.weather;
+
+  const [currentTime, setCurrentTime] = useState(
+    formatToLocalTime(
+      Math.floor(Date.now() / 1000),
+      weathers.timezone,
+      "hh:mm:ss a"
+    )
+  );
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(
+        formatToLocalTime(
+          Math.floor(Date.now() / 1000),
+          weathers.timezone,
+          "hh:mm:ss a"
+        )
+      );
+    }, 1000);
+
+    // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [weathers.dt, weathers.timezone]);
 
   const onClick = (item) => {
     allData.setWeather({
@@ -38,9 +61,7 @@ const CurrentWeather = ({ hourly }) => {
               <span className={styles.locationName}>
                 {weathers.name}, {weathers.country}
               </span>
-              <p className={styles.locationTime}>
-                {formatToLocalTime(weathers.dt, weathers.timezone)}
-              </p>
+              <p className={styles.locationTime}>{currentTime}</p>
             </div>
             <div className={styles.weatherTemperature}>
               <span className={styles.temperature}>

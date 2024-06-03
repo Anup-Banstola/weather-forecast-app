@@ -7,7 +7,6 @@ import styles from "./SearchBox.module.css";
 const SearchBox = ({ setQuery, units, setUnits }) => {
   const [city, setCity] = useState("");
 
-  //Handle the search
   const handleSearch = (e) => {
     e.preventDefault();
     setQuery({ q: city });
