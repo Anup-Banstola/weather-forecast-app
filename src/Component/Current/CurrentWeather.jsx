@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { FaCloud, FaTemperatureLow, FaWater, FaWind } from "react-icons/fa";
 import HourlyForecast from "./HourlyForecast";
 import { formatToLocalTime, iconUrlFromCode } from "../Services/WeatherService";

@@ -14,7 +14,7 @@ const App = () => {
   const weathers = useContext(WeatherContext);
   console.log(weathers);
 
-  let units = weathers.units;
+  const { units } = weathers;
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -56,7 +56,6 @@ const App = () => {
           <DailyWeather
             items={weathers.weather.daily}
             tempUnit={weathers.tempUnit}
-            weather={weathers.weather}
           />
         </div>
       )}
